@@ -1,10 +1,12 @@
 import java.util.Scanner;
 
 public class Main {
+    public static final int MIN_SPEED = 0;
+    public static final int MAX_SPEED = 250;
     public static Scanner scanner = new Scanner(System.in);
-    public static Race race = new Race();
 
     public static void main(String[] args) {
+        Race race = new Race();
         for (int i = 0; i < 3; i++) {
             race.checkLider(newCar());
         }
