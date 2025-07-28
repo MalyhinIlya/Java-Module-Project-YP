@@ -45,7 +45,7 @@ public class Main {
             }
         }
         int speedInt = Integer.parseInt(speed);
-        if (speedInt < 0 || speedInt > 250) {
+        if (speedInt < MIN_SPEED || speedInt > MAX_SPEED) {
             System.out.println("Ошибка. Скорость автомобиля должна быть в диапазоне от 0 до 250. Введите данные еще раз.");
             return false;
         }
